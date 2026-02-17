@@ -1,6 +1,48 @@
-2026-02-12 23:26:15.202 [main] INFO  org.example.service.TareaService - Intentando registrar tarea: ID 2, Desc: Se debe de dar seguimiento a las solicitudes recibidas por el cliente
-2026-02-12 23:26:15.228 [main] INFO  org.example.service.TareaService - Tarea registrada con éxito
-2026-02-12 23:26:15.228 [main] INFO  org.example.service.TareaService - Buscando tarea con ID: 2
-2026-02-12 23:26:15.253 [main] INFO  org.example.service.TareaService - Tarea 2 eliminada del sistema
-2026-02-12 23:26:15.254 [main] INFO  org.example.service.TareaService - Buscando tarea con ID: 2
-2026-02-12 23:26:15.255 [main] ERROR org.example.service.TareaService - Tarea con ID 2 no encontrada
+2026-02-16 20:10:11.341 [main] INFO  org.example.service.TareaService - Petición para eliminar tarea ID: 500
+2026-02-16 20:10:11.355 [main] DEBUG org.example.service.TareaService - Buscando tarea con ID 500 en la lista
+2026-02-16 20:10:11.355 [main] ERROR org.example.service.TareaService - Error: Tarea con ID 500 no existe en la base de datos
+2026-02-16 20:10:40.443 [main] INFO  org.example.service.TareaService - Intentando registrar tarea: ID -5 - Descripción válida
+2026-02-16 20:10:40.466 [main] INFO  org.example.service.TareaService - Intentando registrar tarea: ID 1 - Estudiar para el examen
+2026-02-16 20:10:40.470 [main] INFO  org.example.service.TareaService - Tarea registrada con éxito en el sistema
+2026-02-16 20:10:40.471 [main] DEBUG org.example.service.TareaService - Consultando todas las tareas. Total actual: 1
+2026-02-16 20:10:40.472 [main] DEBUG org.example.service.TareaService - Buscando tarea con ID 1 en la lista
+2026-02-16 20:10:40.477 [main] INFO  org.example.service.TareaService - Intentando registrar tarea: ID 10 - Tarea para borrar
+2026-02-16 20:10:40.477 [main] INFO  org.example.service.TareaService - Tarea registrada con éxito en el sistema
+2026-02-16 20:10:40.477 [main] INFO  org.example.service.TareaService - Petición para eliminar tarea ID: 10
+2026-02-16 20:10:40.478 [main] DEBUG org.example.service.TareaService - Buscando tarea con ID 10 en la lista
+2026-02-16 20:10:40.478 [main] INFO  org.example.service.TareaService - Tarea con ID 10 eliminada satisfactoriamente
+2026-02-16 20:10:40.478 [main] DEBUG org.example.service.TareaService - Consultando todas las tareas. Total actual: 0
+2026-02-16 20:10:40.485 [main] INFO  org.example.service.TareaService - Petición para eliminar tarea ID: 999
+2026-02-16 20:10:40.485 [main] DEBUG org.example.service.TareaService - Buscando tarea con ID 999 en la lista
+2026-02-16 20:10:40.486 [main] ERROR org.example.service.TareaService - Error: Tarea con ID 999 no existe en la base de datos
+2026-02-16 21:42:16.671 [main] INFO  org.example.service.TareaService - Intentando registrar tarea: ID 123 - Dar seguimiento a la peticion del cliente1
+2026-02-16 21:42:16.676 [main] INFO  org.example.service.TareaService - Tarea registrada con éxito en el sistema
+2026-02-16 21:42:29.277 [main] DEBUG org.example.service.TareaService - Consultando todas las tareas. Total actual: 1
+2026-02-16 21:42:52.016 [main] DEBUG org.example.service.TareaService - Buscando tarea con ID 123 en la lista
+2026-02-16 21:42:52.017 [main] INFO  org.example.service.TareaService - Estado de tarea 123 cambiado a: COMPLETADA
+2026-02-16 21:43:01.120 [main] DEBUG org.example.service.TareaService - Consultando todas las tareas. Total actual: 1
+2026-02-16 21:58:28.946 [main] INFO  org.example.service.TareaService - Intentando registrar tarea: ID -5 - Descripción válida
+2026-02-16 21:58:28.972 [main] INFO  org.example.service.TareaService - Intentando registrar tarea: ID 1 - Estudiar para el examen
+2026-02-16 21:58:28.976 [main] INFO  org.example.service.TareaService - Tarea registrada con éxito en el sistema
+2026-02-16 21:58:28.977 [main] DEBUG org.example.service.TareaService - Consultando todas las tareas. Total actual: 1
+2026-02-16 21:58:28.978 [main] DEBUG org.example.service.TareaService - Buscando tarea con ID 1 en la lista
+2026-02-16 21:58:28.985 [main] INFO  org.example.service.TareaService - Intentando registrar tarea: ID 10 - Tarea para borrar
+2026-02-16 21:58:28.986 [main] INFO  org.example.service.TareaService - Tarea registrada con éxito en el sistema
+2026-02-16 21:58:28.987 [main] INFO  org.example.service.TareaService - Petición para eliminar tarea ID: 10
+2026-02-16 21:58:28.987 [main] DEBUG org.example.service.TareaService - Buscando tarea con ID 10 en la lista
+2026-02-16 21:58:28.989 [main] INFO  org.example.service.TareaService - Tarea con ID 10 eliminada satisfactoriamente
+2026-02-16 21:58:28.989 [main] DEBUG org.example.service.TareaService - Consultando todas las tareas. Total actual: 0
+2026-02-16 21:58:28.995 [main] INFO  org.example.service.TareaService - Petición para eliminar tarea ID: 999
+2026-02-16 21:58:28.997 [main] DEBUG org.example.service.TareaService - Buscando tarea con ID 999 en la lista
+2026-02-16 21:58:28.998 [main] ERROR org.example.service.TareaService - Error: Tarea con ID 999 no existe en la base de datos
+2026-02-16 22:01:11.647 [main] INFO  org.example.service.TareaService - Intentando registrar tarea: ID 12 - Recolectar informacion
+2026-02-16 22:01:11.652 [main] INFO  org.example.service.TareaService - Tarea registrada con éxito en el sistema
+2026-02-16 22:02:12.425 [main] DEBUG org.example.service.TareaService - Consultando todas las tareas. Total actual: 1
+2026-02-16 22:02:45.946 [main] INFO  org.example.service.TareaService - Intentando registrar tarea: ID 24 - ordenar los datos suministrados
+2026-02-16 22:02:45.947 [main] INFO  org.example.service.TareaService - Tarea registrada con éxito en el sistema
+2026-02-16 22:02:50.189 [main] DEBUG org.example.service.TareaService - Consultando todas las tareas. Total actual: 2
+2026-02-16 22:04:39.585 [main] DEBUG org.example.service.TareaService - Buscando tarea con ID 24 en la lista
+2026-02-16 22:04:39.585 [main] INFO  org.example.service.TareaService - Estado de tarea 24 cambiado a: COMPLETADA
+2026-02-16 22:06:09.921 [main] INFO  org.example.service.TareaService - Petición para eliminar tarea ID: 24
+2026-02-16 22:06:09.921 [main] DEBUG org.example.service.TareaService - Buscando tarea con ID 24 en la lista
+2026-02-16 22:06:09.921 [main] INFO  org.example.service.TareaService - Tarea con ID 24 eliminada satisfactoriamente
