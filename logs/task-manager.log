@@ -1,0 +1,6 @@
+2026-02-12 23:26:15.202 [main] INFO  org.example.service.TareaService - Intentando registrar tarea: ID 2, Desc: Se debe de dar seguimiento a las solicitudes recibidas por el cliente
+2026-02-12 23:26:15.228 [main] INFO  org.example.service.TareaService - Tarea registrada con éxito
+2026-02-12 23:26:15.228 [main] INFO  org.example.service.TareaService - Buscando tarea con ID: 2
+2026-02-12 23:26:15.253 [main] INFO  org.example.service.TareaService - Tarea 2 eliminada del sistema
+2026-02-12 23:26:15.254 [main] INFO  org.example.service.TareaService - Buscando tarea con ID: 2
+2026-02-12 23:26:15.255 [main] ERROR org.example.service.TareaService - Tarea con ID 2 no encontrada

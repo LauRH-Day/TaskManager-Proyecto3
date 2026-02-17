@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+    <Properties>
+        <Property name="LOG_PATTERN">
+            %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n
+        </Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+
+        <RollingFile name="TareaFile"
+                     fileName="logs/task-manager.log"
+                     filePattern="logs/task-manager-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="1MB"/>
+            </Policies>
+        </RollingFile>
+
+        <RollingFile name="ValidacionFile"
+                     fileName="logs/validacion-tareas.log"
+                     filePattern="logs/validacion-tareas-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="1MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="org.example.service.TareaService" level="DEBUG" additivity="false">
+            <AppenderRef ref="TareaFile"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Logger name="org.example.service.ValidacionService" level="DEBUG" additivity="false">
+            <AppenderRef ref="ValidacionFile"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Root level="TRACE">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
