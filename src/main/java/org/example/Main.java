@@ -23,7 +23,6 @@ public class Main {
         System.out.println("========================================");
 
         do {
-            // Menú organizado verticalmente para mejor lectura
             System.out.println("\n----------- MENÚ DE TAREAS -----------");
             System.out.println(" 1. ➕ Agregar nueva tarea");
             System.out.println(" 2. 📋 Listar todas las tareas");

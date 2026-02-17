@@ -27,7 +27,7 @@ public class TareaService {
         log.info("Tarea registrada con éxito en el sistema");
     }
 
-    // 2. ELIMINAR TAREA (Usa Excepción VERIFICADA)
+    // 2. ELIMINAR TAREA
     public void eliminarTarea(int id) throws TareaNoEncontradaException {
         log.info("Petición para eliminar tarea ID: {}", id);
 
@@ -37,7 +37,7 @@ public class TareaService {
         log.info("Tarea con ID {} eliminada satisfactoriamente", id);
     }
 
-    // 3. BUSCAR POR ID (Usa Excepción VERIFICADA)
+    // 3. BUSCAR POR ID
     public Tarea getTareaById(int id) throws TareaNoEncontradaException {
         log.debug("Buscando tarea con ID {} en la lista", id);
 
@@ -68,10 +68,10 @@ public class TareaService {
     // 5. LISTAR TODAS
     public List<Tarea> listarTodas() {
         log.debug("Consultando todas las tareas. Total actual: {}", listaTareas.size());
-        return new ArrayList<>(listaTareas); // Devolvemos una copia por seguridad
+        return new ArrayList<>(listaTareas); //
     }
 
-    // MÉTODO DE VALIDACIONES (Siguiendo tu patrón de CitaService)
+    // MÉTODO DE VALIDACIONES
     private void validaciones(int id, String descripcion) {
         validacionService.validarId(id);
         validacionService.validarDescripcion(descripcion);
